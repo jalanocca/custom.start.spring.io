@@ -3,7 +3,7 @@
 #
 FROM maven:3.9.5-eclipse-temurin-17 AS build
 COPY . .
-RUN mvn clean package -DskipTests
+RUN mvn clean install -DskipTests
 
 #
 # Package stage
